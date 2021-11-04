@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#div1 {
+    background-color: black;
+    height: 20rem;
+    width: 20rem;
+    transition: background-color;
+    transition-duration: 6s;
+}
+
+#div1:hover {
+    background-color: lightgray;
+}
+
+#div2 > p {
+    font-size: 1rem;
+    color: aqua;
+    transition: color, font-size;
+    transition-duration: 6s;
+}
+
+#div2 p:hover {
+    font-size: 5rem;
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    html{
+        font-size: 1rem;
+    }
+
+    #container{
+        margin: 0;
+        width: 100%;
+    }
+}
